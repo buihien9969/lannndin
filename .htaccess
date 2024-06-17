@@ -1,0 +1,3 @@
+AddType application/x-httpd-php .php
+RewriteEngine On
+RewriteRule ^example$ example.php [L]
