@@ -1,0 +1,38 @@
+@keyframes scaleInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadowPulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@keyframes rotateSlow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.scale-in-out {
+    animation: scaleInOut 2s infinite;
+}
+
+.shadow-pulse {
+    animation: shadowPulse 2s infinite;
+}
+
+.rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+}
