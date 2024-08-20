@@ -39,7 +39,6 @@ let currentIndex = 0;
 
 function showNotification() {
     const notification = document.getElementById('notification');
-    // Cập nhật nội dung thông báo với tên tiếp theo
     notification.textContent = `${names[currentIndex]} vừa đăng ký thành công`;
     notification.classList.remove('hidden');
 
@@ -51,7 +50,6 @@ function showNotification() {
         notification.classList.remove('opacity-100');
         setTimeout(function() {
             notification.classList.add('hidden');
-            // Cập nhật currentIndex để sử dụng tên tiếp theo
             currentIndex = (currentIndex + 1) % names.length;
         }, 500);
     }, 5000);
